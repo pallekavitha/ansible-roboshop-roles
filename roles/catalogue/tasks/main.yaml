@@ -22,6 +22,7 @@
   ansible.builtin.import_role:
     name: common
     tasks_from: load-mongo-schema
+    remote_src: yes
 
 - name: Start application
   ansible.builtin.import_role:
